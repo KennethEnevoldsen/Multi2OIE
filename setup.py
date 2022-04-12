@@ -3,8 +3,6 @@ import setuptools
 with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 
-with open("actual_requirements.txt", encoding="utf-8") as f:
-    requirements = f.read().split("\n")
 
 setuptools.setup(
     name="relationextraction",
