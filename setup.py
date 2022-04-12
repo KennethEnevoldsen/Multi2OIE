@@ -3,7 +3,7 @@ import setuptools
 with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 
-with open("requirements_WORKING.txt", encoding="utf-8") as f:
+with open("actual_requirements.txt", encoding="utf-8") as f:
     requirements = f.read().split("\n")
 
 setuptools.setup(
@@ -17,7 +17,14 @@ setuptools.setup(
     url="https://github.com/HLasse/Multi2OIE",
     license="MIT",
     packages=setuptools.find_packages(),
-    install_requires=[],
+    install_requires=[
+        "torch>=1.6.0,<1.7.0",
+        "numpy>=1.19.5,<1.20.0",
+        "pandas>=1.1.5,<1.1.6",
+        "spacy>=3.2.0,<3.3.0",
+        "transformers>=4.11.3,<4.12.0",
+        "spacy-transformers>=1.1.2,<1.2.0",
+    ],
     keywords=["NLP", "knowledge graphs", "relation extraction", "triplets"],
     classifiers=[
         "Programming Language :: Python :: 3",
