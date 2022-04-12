@@ -8,7 +8,7 @@ with open("actual_requirements.txt", encoding="utf-8") as f:
 
 setuptools.setup(
     name="relationextraction",
-    version="0.0.2",
+    version="0.0.3",
     author="Lasse Hansen",
     author_email="lasseh0310@gmail.com",
     description="A library for extracting relations within a text",
