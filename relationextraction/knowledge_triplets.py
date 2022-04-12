@@ -69,7 +69,7 @@ class KnowledgeTriplets:
             device=self._device,
         )
 
-        model.load_state_dict(torch.load(path), strict=False)
+        model.load_state_dict(torch.load(path, map_location=self._device), strict=False)
         model.zero_grad()
         model.eval()
 
