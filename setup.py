@@ -3,12 +3,12 @@ import setuptools
 with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 
-with open("requirements.txt", encoding="utf-8") as f:  # should this be _WORKING?
+with open("requirements_WORKING.txt", encoding="utf-8") as f:
     requirements = f.read().split("\n") 
 
 setuptools.setup(
     name="relationextraction",
-    version="0.0.1",
+    version="0.0.2",
     author="Lasse Hansen",
     author_email="lasseh0310@gmail.com",
     description="A library for extracting relations within a text",
@@ -17,7 +17,7 @@ setuptools.setup(
     url="https://github.com/HLasse/Multi2OIE",
     license="MIT",
     packages=setuptools.find_packages(),
-    install_requires=[ ],  # no requirements is installed?
+    install_requires=requirements,
 
 
     keywords = ['NLP', 'knowledge graphs', 'relation extraction', 'triplets'],
