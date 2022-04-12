@@ -3,8 +3,8 @@ import setuptools
 with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 
-with open("requirements.txt", encoding="utf-8") as f:
-    requirements = f.read().split("\n")
+with open("requirements.txt", encoding="utf-8") as f:  # should this be _WORKING?
+    requirements = f.read().split("\n") 
 
 setuptools.setup(
     name="relationextraction",
@@ -17,7 +17,7 @@ setuptools.setup(
     url="https://github.com/HLasse/Multi2OIE",
     license="MIT",
     packages=setuptools.find_packages(),
-    install_requires=[ ],
+    install_requires=[ ],  # no requirements is installed?
 
 
     keywords = ['NLP', 'knowledge graphs', 'relation extraction', 'triplets'],
