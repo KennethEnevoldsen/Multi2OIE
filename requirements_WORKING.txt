@@ -15,7 +15,7 @@ contextvars==2.4
 cryptography==2.9.2
 cymem==2.0.3
 da-core-news-lg @ https://github.com/explosion/spacy-models/releases/download/da_core_news_lg-3.2.0/da_core_news_lg-3.2.0-py3-none-any.whl
-dataclasses==0.8
+dataclasses
 decorator==4.4.2
 defusedxml==0.7.1
 docopt==0.6.2
